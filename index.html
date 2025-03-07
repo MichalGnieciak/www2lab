@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>Colors</title>
     </head>
     <body>
@@ -14,8 +14,8 @@
                 <h1>What colors are the most favored</h1>
                 <time>06.03.2025</time>
             </header>
+            <h2>About:</h2>
             <p>
-                <h2>About:</h2>
                 This is a template site to showcase the <em>HTML</em> and <strong>colors</strong>
                 as discussed on: <a href="https://michalgnieciak.github.io/">Here</a>
             </p>
@@ -28,21 +28,23 @@
             <caption>
                 Color stats
             </caption>
-            <tr>
-                <td></td>
-                <th scope="col">Red</th>
-                <th scope="col">Blue</th>
-            </tr>
-            <tr>
-                <th scope="row">Wavelength</th>
-                <td>432</td>
-                <td>312</td>
-            </tr>
-            <tr>
-                <th scope="row">Cool</th>
-                <td>Y</td>
-                <td>N</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <th scope="col">Red</th>
+                    <th scope="col">Blue</th>
+                </tr>
+                <tr>
+                    <th scope="row">Wavelength</th>
+                    <td>432</td>
+                    <td>312</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cool</th>
+                    <td>Y</td>
+                    <td>N</td>
+                </tr>
+            </tbody>
         </table>
 
         <h1>All listed colors:</h1>
@@ -55,16 +57,40 @@
         </ol>
 
         <h1>Here's what a color may look like:</h1>
-        <img 
-            decoding="async" 
-            src="https://preview.colorkit.co/color/87cefa.png?size=wallpaper&static=true" 
-            alt="#87cefa hex color wallpaper" 
-            loading="lazy" 
-            style="max-height:200px;border-radius:6px;" 
-        />
-        
-        <form>
-            
+        <img decoding="async" src="https://preview.colorkit.co/color/87cefa.png?size=wallpaper&static=true" alt="#87cefa hex color wallpaper" loading="lazy">
+        <details>
+            <summary>What's that color:</summary>
+            Blue.
+            <div aria-busy="true" aria-describedby="progress-bar"></div>
+            <progress id="progress-bar" aria-label="Content loading…"></progress>
+        </details>
+        <form method="get">
+            <label>
+              Type in your favourite color or select from list below:
+              <input type="text" name="submitted-color">
+            </label>
+            <select name="colors" id="color-select">
+                <option value="">List of colors</option>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+            </select>
+            <button type="submit">Save</button>
         </form>
+        <div id="container">
+            <div id="image_container">
+                <!--http://www.image-map.net/-->
+                <img src="primary.jpg" usemap="#image-map" alt="ImageMap">
+                <map name="image-map">
+                    <!-- target="_blank": Opens the link in new tab -->
+                    <area alt="Yellow" title="Yellow" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_yellow" coords="587,1119,342,1060,159,908,56,561,128,323,584,589" shape="poly">
+                    <area alt="Blue" title="Blue" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_blue" coords="587,588,1051,323,1118,572,1044,865,837,1062,591,1122" shape="poly">
+                    <area alt="Red" title="Red" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_red" coords="586,582,128,318,310,135,439,79,638,59,848,118,957,207,1048,321" shape="poly">
+                </map>
+            </div>
+        </div>
+
     </body>
 </html>
