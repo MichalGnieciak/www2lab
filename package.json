@@ -1,0 +1,20 @@
+{
+  "name": "www2lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalGnieciak/www2lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichalGnieciak/www2lab/issues"
+  },
+  "homepage": "https://github.com/MichalGnieciak/www2lab#readme",
+  "description": "",
+  "scripts": {
+    "validate": "html-validate ."
+ }
+}

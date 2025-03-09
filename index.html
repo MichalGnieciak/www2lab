@@ -6,64 +6,82 @@
         <title>Colors</title>
     </head>
     <body>
+        <!--1.Site's structure-->
+        <!--Header, article, footer, h1, h2-->
         <header>
             <a class="logo" href="https://jessicagingrich.com/wp-content/uploads/2019/03/kisspng-color-wheel-color-scheme-color-theory-paint-colors-5abd04613e3717.8936079915223368652548-1.png">What colors are the most favored</a>
         </header>
         <article>
             <header>
                 <h1>What colors are the most favored</h1>
-                <time>06.03.2025</time>
             </header>
+            <h2>Here's what a color may look like:</h2>
+            <!--5. Image-->
+            <!-- img -->
+            <img decoding="async" src="https://preview.colorkit.co/color/87cefa.png?size=wallpaper&static=true" alt="#87cefa hex color wallpaper" loading="lazy">
+            <!--7. Description-->
+            <!--details, summary-->
+            <details>
+                <summary>What's that color:</summary>
+                Blue.
+                <div aria-busy="true" aria-describedby="progress-bar"></div>
+                <!--8. Progress bar-->
+                <!--progress-->
+                <progress id="progress-bar" aria-label="Content loading…"></progress>
+            </details>
             <h2>About:</h2>
             <p>
+                <!--4. Distinctions-->
+                <!--em, strong-->
                 This is a template site to showcase the <em>HTML</em> and <strong>colors</strong>
-                as discussed on: <a href="https://michalgnieciak.github.io/">Here</a>
+                as discussed : <a href="https://michalgnieciak.github.io/">here</a>.
             </p>
-            <footer>
-                <p>© 2025 Michał Gnieciak</p>
-            </footer>
-        </article>
-
-        <table>
-            <caption>
-                Color stats
-            </caption>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <th scope="col">Red</th>
-                    <th scope="col">Blue</th>
-                </tr>
-                <tr>
-                    <th scope="row">Wavelength</th>
-                    <td>432</td>
-                    <td>312</td>
-                </tr>
-                <tr>
-                    <th scope="row">Cool</th>
+            <h1>All listed colors:</h1>
+            <!--3. List-->
+            <!--ol with roman numerals-->
+            <ol type="I">
+            <li>Blue</li>
+            <li>Red</li>
+            <li>Green</li>
+            <li>Purple</li>
+            <li>Black</li>
+            </ol>
+            <!--2. Table-->
+            <!--table, thead, tr, th, caption-->
+            <table>
+                <caption>Color stats:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col" rowspan="2">Name</th>
+                    <th scope="col" colspan="2">Cool</th>
+                    <th scope="col" rowspan="2">Wavelength</th>
+                  </tr>
+                  <tr>
+                    <th scope="col">Has been</th>
+                    <th scope="col">Still is</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Blue</th>
                     <td>Y</td>
                     <td>N</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h1>All listed colors:</h1>
-        <ol type="I">
-        <li>Blue</li>
-        <li>Red</li>
-        <li>Green</li>
-        <li>Purple</li>
-        <li>Black</li>
-        </ol>
-
-        <h1>Here's what a color may look like:</h1>
-        <img decoding="async" src="https://preview.colorkit.co/color/87cefa.png?size=wallpaper&static=true" alt="#87cefa hex color wallpaper" loading="lazy">
-        <details>
-            <summary>What's that color:</summary>
-            Blue.
-            <div aria-busy="true" aria-describedby="progress-bar"></div>
-            <progress id="progress-bar" aria-label="Content loading…"></progress>
-        </details>
+                    <td>432</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Red</th>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>332</td>
+                  </tr>
+                </tbody>
+            </table>
+            <footer>
+                <p>© 2025 Michał Gnieciak <time>06.03.2025</time></p>
+            </footer>
+        </article>
+        <!--6. Form-->
+        <!--form, input, select, button-->
         <form method="get">
             <label>
               Type in your favourite color or select from list below:
@@ -83,6 +101,8 @@
             <div id="image_container">
                 <!--http://www.image-map.net/-->
                 <img src="ImageMap/primary.jpg" usemap="#image-map" alt="ImageMap">
+                <!--9. Map-->
+                <!--map, area, at least 3 scopes-->
                 <map name="image-map">
                     <!-- target="_blank": Opens the link in new tab -->
                     <area alt="Yellow" title="Yellow" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_yellow" coords="587,1119,342,1060,159,908,56,561,128,323,584,589" shape="poly">
