@@ -1,124 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Colors</title>
-        <link rel="stylesheet" href="https://MichalGnieciak.github.io/www2lab/css/styles.css">
-    </head>
-    <body>
+<!--Done--><!DOCTYPE html>
+<!--Done--><html lang="en">
+<!--Done-->    <head>
+<!--Done-->       <meta charset="UTF-8">
+<!--Done-->        <meta name="viewport" content="width=device-width">
+<!--Done-->        <title>Colors</title>
+<!--Done-->        <link rel="stylesheet" href="css/styles.css">
+<!--Done-->    </head>
+<!--Done-->    <body>
         <!--1.Site's structure-->
         <!--Header, article, footer, h1, h2-->
-        <header>
+<!--Done-->        <header>
             <a class="logo" href="assets/color-wheel.png">What colors are the most favored</a>
-        </header>
-        <article>
-            <header>
-                <h1>What colors are the most favored</h1>
-            </header>
-            <h2>Here's what a color may look like:</h2>
-            <!--5. Image-->
-            <!-- img -->
-            <img decoding="async" src="assets/color-example.png" alt="#87cefa hex color wallpaper" loading="lazy">
-            <!--7. Description-->
-            <!--details, summary-->
-            <details>
-                <summary>What's that color:</summary>
-                Blue.
-                <div aria-busy="true" aria-describedby="progress-bar"></div>
-                <!--8. Progress bar-->
-                <!--progress-->
-                <progress id="progress-bar" aria-label="Content loading…"></progress>
-            </details>
-            <h2>About:</h2>
-            <p>
-                <!--4. Distinctions-->
-                <!--em, strong-->
-                This is a template site to showcase the <em>HTML</em> and <strong>colors</strong>
-                as discussed : <a href="https://michalgnieciak.github.io/">here</a>.
-            </p>
-            <h1>All listed colors:</h1>
-            <!--3. List-->
-            <!--ol with roman numerals-->
-            <ol type="I">
-            <li>Blue</li>
-            <li>Red</li>
-            <li>Green</li>
-            <li>Purple</li>
-            <li>Black</li>
-            </ol>
-            <!--2. Table-->
-            <!--table, thead, tr, th, caption-->
-            <table>
-                <caption>Color stats:</caption>
-                <thead>
-                  <tr>
-                    <th scope="col" rowspan="2">Name</th>
-                    <th scope="col" colspan="2">Cool</th>
-                    <th scope="col" rowspan="2">Wavelength</th>
-                  </tr>
-                  <tr>
-                    <th scope="col">Has been</th>
-                    <th scope="col">Still is</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Blue</th>
-                    <td>Y</td>
-                    <td>N</td>
-                    <td>432</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Red</th>
-                    <td>N</td>
-                    <td>N</td>
-                    <td>332</td>
-                  </tr>
-                </tbody>
-            </table>
-            <footer>
-                <p>© 2025 Michał Gnieciak <time>06.03.2025</time></p>
-            </footer>
-        </article>
-        <!--6. Form-->
-        <!--form, input, select, button-->
-        <form method="get">
-            <label>
-              Type in your favourite color or select from list below:
-              <input type="text" name="submitted-color">
-            </label>
-            <select name="colors" id="color-select">
-                <option value="">List of colors</option>
-                <option value="black">Black</option>
-                <option value="blue">Blue</option>
-                <option value="green">Green</option>
-                <option value="purple">Purple</option>
-                <option value="red">Red</option>
-            </select>
-            <button type="submit">Save</button>
-        </form>
-        <div id="container">
-            <div id="image_container">
-                <!--http://www.image-map.net/-->
-                <img src="assets/ImageMap/primary.jpg" usemap="#image-map" alt="ImageMap">
-                <!--9. Map-->
-                <!--map, area, at least 3 scopes-->
-                <map name="image-map">
-                    <!-- target="_blank": Opens the link in new tab -->
-                    <area alt="Yellow" title="Yellow" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_yellow" coords="587,1119,342,1060,159,908,56,561,128,323,584,589" shape="poly">
-                    <area alt="Blue" title="Blue" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_blue" coords="587,588,1051,323,1118,572,1044,865,837,1062,591,1122" shape="poly">
-                    <area alt="Red" title="Red" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_red" coords="586,582,128,318,310,135,439,79,638,59,848,118,957,207,1048,321" shape="poly">
-                </map>
-            </div>
-        </div>
-        <ul class="flex-container">
-            <li class="flex-item">1</li>
-            <li class="flex-item">2</li>
-            <li class="flex-item">3</li>
-            <li class="flex-item">4</li>
-            <li class="flex-item">5</li>
-            <li class="flex-item">6</li>
-        </ul>
-    </body>
-</html>
+<!--Done-->        </header>
+<!--Done-->        <article class="flex-article">
+<!--Done-->           <header>What colors are the most favored</header>
+<!--Done-->            <h2>Here's what a color may look like:</h2>
+<!--Done-->            <!--5. Image-->
+<!--Done-->            <!-- img -->
+<!--Done-->            <img class="image-scaled" decoding="async" src="assets/color-example.png" alt="#87cefa hex color wallpaper" loading="lazy">
+<!--Done-->            <!--7. Description-->
+<!--Done-->            <!--details, summary-->
+<!--Done-->            <details class="flex-details">
+<!--Done-->                <summary class="flex-details-elem">What's that color:</summary>
+<!--Done-->                <p class="flex-details-elem">Blue.<p>
+<!--Done-->                <!--8. Progress bar-->
+<!--Done-->                <!--progress-->
+<!--Done-->                <progress class="flex-details-elem" id="progress-bar" aria-label="Content loading…"></progress>
+<!--Done-->            </details>
+<!--Done-->            <h2>About:</h2>
+<!--Done-->            <p>
+<!--Done-->                <!--4. Distinctions-->
+<!--Done-->                <!--em, strong-->
+<!--Done-->                This is a template site to showcase the <em>HTML</em> and <strong>colors</strong>
+<!--Done-->                as discussed : <a href="https://michalgnieciak.github.io/">here</a>.
+<!--Done-->            </p>
+<!--Done-->            <h1>All listed colors:</h1>
+<!--Done-->            <!--3. List-->
+<!--Done-->            <!--ol with roman numerals-->
+<!--Done-->            <ol type="I">
+<!--Done-->            <li>Blue</li>
+<!--Done-->            <li>Red</li>
+<!--Done-->            <li>Green</li>
+<!--Done-->            <li>Purple</li>
+<!--Done-->            <li>Black</li>
+<!--Done-->            </ol>
+<!--Done-->             <!--2. Table-->
+<!--Done-->             <!--table, thead, tr, th, caption-->
+<!--Done-->            <table>
+<!--Done-->                <caption>Color stats:</caption>
+<!--Done-->                <thead>
+<!--Done-->                  <tr>
+<!--Done-->                    <th scope="col" rowspan="2">Name</th>
+<!--Done-->                    <th scope="col" colspan="2">Cool</th>
+<!--Done-->                    <th scope="col" rowspan="2">Wavelength</th>
+<!--Done-->                  </tr>
+<!--Done-->                  <tr>
+<!--Done-->                    <th scope="col">Has been</th>
+<!--Done-->                    <th scope="col">Still is</th>
+<!--Done-->                  </tr>
+<!--Done-->                </thead>
+<!--Done-->                <tbody>
+<!--Done-->                  <tr>
+<!--Done-->                    <th scope="row">Blue</th>
+<!--Done-->                    <td>Y</td>
+<!--Done-->                    <td>N</td>
+<!--Done-->                    <td>432</td>
+<!--Done-->                  </tr>
+<!--Done-->                  <tr>
+<!--Done-->                    <th scope="row">Red</th>
+<!--Done-->                    <td>N</td>
+<!--Done-->                    <td>N</td>
+<!--Done-->                    <td>332</td>
+<!--Done-->                  </tr>
+<!--Done-->                </tbody>
+<!--Done-->            </table>
+<!--Done-->            <footer>
+<!--Done-->                <p>© 2025 Michał Gnieciak <time>06.03.2025</time></p>
+<!--Done-->            </footer>
+<!--Done-->        </article>
+<!--Done-->        <!--6. Form-->
+<!--Done-->        <!--form, input, select, button-->
+<!--Done-->        <form method="get">
+<!--Done-->            <label>
+<!--Done-->              Type in your favourite color or select from list below:
+<!--Done-->              <input type="text" name="submitted-color">
+<!--Done-->            </label>
+<!--Done-->            <select name="colors" id="color-select">
+<!--Done-->                <option value="">List of colors</option>
+<!--Done-->                <option value="black">Black</option>
+<!--Done-->                <option value="blue">Blue</option>
+<!--Done-->                <option value="green">Green</option>
+<!--Done-->                <option value="purple">Purple</option>
+<!--Done-->                <option value="red">Red</option>
+<!--Done-->            </select>
+<!--Done-->            <button type="submit">Save</button>
+<!--Done-->        </form>
+<!--Done-->        <div id="container">
+<!--Done-->            <div id="image_container">
+<!--Done-->                <!--http://www.image-map.net/-->
+<!--Done-->                <img src="assets/ImageMap/primary.jpg" usemap="#image-map" alt="ImageMap">
+<!--Done-->                <!--9. Map-->
+<!--Done-->                <!--map, area, at least 3 scopes-->
+<!--Done-->                <map name="image-map">
+<!--Done-->                    <!-- target="_blank": Opens the link in new tab -->
+<!--Done-->                    <area alt="Yellow" title="Yellow" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_yellow" coords="587,1119,342,1060,159,908,56,561,128,323,584,589" shape="poly">
+<!--Done-->                    <area alt="Blue" title="Blue" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_blue" coords="587,588,1051,323,1118,572,1044,865,837,1062,591,1122" shape="poly">
+<!--Done-->                    <area alt="Red" title="Red" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_red" coords="586,582,128,318,310,135,439,79,638,59,848,118,957,207,1048,321" shape="poly">
+<!--Done-->                </map>
+<!--Done-->            </div>
+<!--Done-->        </div>
+<!--Done-->    </body>
+<!--Done--></html>

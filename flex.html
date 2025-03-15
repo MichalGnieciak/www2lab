@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Colors</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <ul class="navigation">
+            <li id="logo"><a target="_blank" href="https://michalgnieciak.github.io/"><img class="image-scaled" src="assets/color-wheel.png"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="flex-contents">
+            <ol class="navigation-side" type="I">
+                <caption>Colors list:</caption>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ol>
+            <article class="flex-contents-items">
+                <header class="flex-flex">What colors are the most favored?</header>
+                <h1 class="flex-flex">Get to know that by reading the below article.</h1>
+                <h2 class="flex-flex"><em>(Be aware that <strong>most</strong> of the data is <strong>made up</strong>)</em></h2>
+                <div  class="flex-flex flex-grid">
+                   <div class="flex-grid-picture">
+                        <p>Here's what a color may look like:</p>
+                        <div class="color-example"></div>
+                        <details class="flex-details">
+                            <summary class="flex-details-elem">What's that color:</summary>
+                            <p class="flex-details-elem">Brown.<p>
+                            <p>And this is how many people answered that correctly:</p>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>    
+                        </details>
+                   </div>
+                   <table>
+                    <caption>Color stats:</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col" rowspan="2">Name</th>
+                        <th scope="col" colspan="2">Cool</th>
+                        <th scope="col" rowspan="2">Wavelength</th>
+                      </tr>
+                      <tr>
+                        <th scope="col">Has been</th>
+                        <th scope="col">Still is</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Blue</th>
+                        <td>Y</td>
+                        <td>N</td>
+                        <td>432</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Red</th>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>332</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="image_container">
+                    <p>Here's what a color map may look like:</p>
+                    <img src="assets/ImageMap/primary.png" usemap="#image-map" alt="ImageMap" style="width: 100px; height: 100px;">
+                    <map name="image-map">
+                        <area alt="Yellow" title="Yellow" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_yellow" coords="49,93,28,88,13,76,5,47,11,27,48,49" shape="poly">
+                        <area alt="Blue" title="Blue" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_blue" coords="49,49,87,27,93,48,87,72,70,80,49,93" shape="poly">
+                        <area alt="Red" title="Red" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_red" coords="49,48,11,27,26,11,36,7,53,5,70,8,79,12,87,27" shape="poly">
+                    </map>
+                </div>                
+                </div>
+                <form method="get" class="flex-form">
+                    <label>
+                      Type in your favourite color or select from the list below:
+                    </label>
+                    <input type="text" name="submitted-color" placeholder="Enter color:">
+                    <select name="colors" id="color-select">
+                        <option value="">List of colors</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="purple">Purple</option>
+                        <option value="red">Red</option>
+                    </select>
+                    <button type="submit">Save</button>
+                </form>
+                <footer>
+                    <p>© 2025 Michał Gnieciak <time>06.03.2025</time></p>
+                </footer>
+            </article>
+        </div>
+    </body>
+</html>

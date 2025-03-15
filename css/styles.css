@@ -1,22 +1,360 @@
-.flex-container {
+  .navigation {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    
-    padding: 0;
-    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
+
     list-style: none;
+    margin: 0; 
+    background: rgb(206, 171, 147);
   }
   
-  .flex-item {
-    background: tomato;
-    padding: 5px;
-    width: 200px;
-    height: 150px;
-    margin-top: 10px;
-    line-height: 150px;
-    color: white;
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: rgb(255, 251, 233);
+  }
+
+  #logo {
+    margin-right: auto;
+    align-self: center;
+  }
+
+  .navigation img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .navigation a:hover {
+    background: rgb(173, 139, 115);
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    #logo {
+      margin-right: 0;
+      align-self: center;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+  .flex-contents {
+    margin-top: 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .navigation-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgb(255, 251, 233);
+    margin: 0; 
+    background: rgb(206, 171, 147);
+  }
+
+  .navigation-side a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: rgb(255, 251, 233);
+  }
+
+  .navigation-side a:hover {
+    background: rgb(173, 139, 115);
+  }
+
+  @media all and (max-width: 800px) {
+    .navigation-side {
+      display: none;
+    }
+  }
+
+  .flex-contents-items {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(227, 202, 165);
+    gap: 5px;
+  }
+  
+  .flex-flex {
+    display: block;
+  }
+
+  .flex-contents-items header {
+    color: rgb(255, 251, 233);
+    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
     font-weight: bold;
     font-size: 3em;
     text-align: center;
+  }
+
+  .flex-contents-items h1 {
+    color: rgb(255, 251, 233);
+    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .flex-contents-items h2 {
+    color: rgb(255, 251, 233);
+    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .flex-grid {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .flex-grid-picture {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .color-example {
+    width: 100px;
+    height: 100px;
+    background:  rgb(173, 139, 115);
+  }
+
+  .flex-grid p  {
+    color: rgb(255, 251, 233);
+    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    font-size: 1em;
+    text-align: center; 
+  }
+
+  .flex-drig details {
+    color: rgb(255, 251, 233);
+    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    font-size: 1em;
+    text-align: center; 
+  }
+
+    table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(255, 251, 233);
+    box-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    border-radius: 8px;
+  }
+
+  caption {
+    font-size: 1em;
+    color: rgb(255, 251, 233);
+    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    text-align: center;
+  }
+
+  th, td {
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(173, 139, 115);
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  th {
+    background-color: rgb(173, 139, 115);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  th[scope="col"] {
+    background-color:  rgb(173, 139, 115);
+  }
+
+  th[scope="row"] {
+    background-color: rgb(206, 171, 147);
+    color: white;
+  }
+
+  td {
+    background-color: #ffffff;
+  }
+
+  @media (max-width: 800px) {
+    table {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 8px 12px;
+    }
+
+    tr:hover td, tr:hover th {
+      background-color: #f1f1f1;
+      color:  rgb(173, 139, 115);
+    }
+  
+    tbody tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+  
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+  }
+
+  footer {
+    color: rgb(255, 251, 233);
+    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;  
+  }
+
+  .image_container {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-form {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  button {
+    background-color: rgb(206, 171, 147);/* Green background */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color:  rgb(173, 139, 115);
+    transform: translateY(2px);
+  }
+
+  label {
+    font-size: 1.5em;
+    color: rgb(255, 251, 233);
+    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%; 
+    padding: 12px 20px; 
+    font-size: 16px; 
+    color: rgb(173, 139, 115); 
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none; 
+    box-sizing: border-box;
+    transition: all 0.3s ease; 
+  }
+  
+  input:focus {
+    border-color:rgb(173, 139, 115);
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(173, 139, 115);
+  }
+  
+  input::placeholder {
+    color: #aaa;
+    font-style: italic; 
+  }
+  
+  input:disabled {
+    background-color: #e0e0e0; 
+    border-color: #ccc; 
+    color: rgb(173, 139, 115);
+  }
+
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px; 
+    color: #333; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-sizing: border-box; 
+  }
+  
+  select:focus {
+    border-color:rgb(173, 139, 115);
+    background-color: #fff;
+    box-shadow: 0 0 8px rgb(173, 139, 115);
+  }
+
+  summary {
+    color: rgb(255, 251, 233);
+    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    font-size: 1;
+    text-align: center;  
+  }
+
+  .progress-container {
+    width: 100%; /* Full width */
+    height: 30px; /* Height of the progress bar */
+    background-color: #f3f3f3; /* Light gray background */
+    border-radius: 20px; /* Rounded corners for the container */
+    box-shadow: 0 2px 5px rgb(173, 139, 115); /* Optional shadow */
+  }
+  
+  /* The actual progress bar */
+  .progress-bar {
+    height: 100%; /* Take the full height of the container */
+    background-color: rgb(173, 139, 115); /* Green color for the progress */
+    border-radius: 20px; /* Rounded corners for the progress bar */
+    transition: width 0.3s ease; /* Smooth transition for width change */
   }
