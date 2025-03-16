@@ -111,18 +111,24 @@
     text-align: center;
   }
 
+  .text-small {
+    font-size: 1em;
+  }
+
+  .text-medium {
+    font-size: 2em;
+  }
+
+  .text-large {
+    font-size: 3em;
+  }
+
   .flex-contents-items header {
     font-weight: bold;
-    font-size: 3em;
   }
 
   .flex-contents-items h1 {
     font-weight: bold;
-    font-size: 2em;
-  }
-
-  .flex-contents-items h2 {
-    font-size: 1em;
   }
 
   .flex-grid {
@@ -148,34 +154,13 @@
     background:  rgb(173, 139, 115);
   }
 
-  .flex-grid p  {
-    color: rgb(255, 251, 233);
-    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
-    font-size: 1em;
-    text-align: center; 
-  }
-
-  .flex-drig details {
-    color: rgb(255, 251, 233);
-    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
-    font-size: 1em;
-    text-align: center; 
-  }
-
-    table {
+  table {
     border-collapse: collapse;
     margin: 20px 0;
     font-family: 'Arial', sans-serif;
     background-color: rgb(255, 251, 233);
     box-shadow: 2px 2px 5px  rgb(173, 139, 115);
     border-radius: 8px;
-  }
-
-  caption {
-    font-size: 1em;
-    color: rgb(255, 251, 233);
-    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
-    text-align: center;
   }
 
   th, td {
@@ -257,7 +242,7 @@
   }
 
   button {
-    background-color: rgb(206, 171, 147);/* Green background */
+    background-color: rgb(206, 171, 147);
     color: white;
     border: none;
     padding: 15px 32px;
@@ -277,9 +262,6 @@
 
   label {
     font-size: 1.5em;
-    color: rgb(255, 251, 233);
-    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
-    text-align: center;
     font-weight: bold;
   }
 
@@ -331,13 +313,6 @@
     border-color:rgb(173, 139, 115);
     background-color: #fff;
     box-shadow: 0 0 8px rgb(173, 139, 115);
-  }
-
-  summary {
-    color: rgb(255, 251, 233);
-    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
-    font-size: 1;
-    text-align: center;  
   }
 
   .progress-container {
