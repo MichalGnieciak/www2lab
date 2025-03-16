@@ -118,7 +118,6 @@
     text-shadow: 2px 2px 5px  rgb(173, 139, 115);
     font-weight: bold;
     font-size: 2em;
-    text-align: center;
   }
 
   .flex-contents-items h2 {
@@ -344,17 +343,17 @@
   }
 
   .progress-container {
-    width: 100%; /* Full width */
-    height: 30px; /* Height of the progress bar */
-    background-color: #f3f3f3; /* Light gray background */
-    border-radius: 20px; /* Rounded corners for the container */
-    box-shadow: 0 2px 5px rgb(173, 139, 115); /* Optional shadow */
+    width: 100%;
+    height: 30px; 
+    background-color: #f3f3f3; 
+    border-radius: 20px; 
+    box-shadow: 0 2px 5px rgb(173, 139, 115); 
   }
   
   /* The actual progress bar */
   .progress-bar {
-    height: 100%; /* Take the full height of the container */
-    background-color: rgb(173, 139, 115); /* Green color for the progress */
-    border-radius: 20px; /* Rounded corners for the progress bar */
-    transition: width 0.3s ease; /* Smooth transition for width change */
+    height: 100%;
+    background-color: rgb(173, 139, 115);
+    border-radius: 20px;
+    transition: width 0.3s ease;
   }
