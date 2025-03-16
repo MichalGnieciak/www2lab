@@ -118,6 +118,7 @@
     text-shadow: 2px 2px 5px  rgb(173, 139, 115);
     font-weight: bold;
     font-size: 2em;
+    text-align: center;
   }
 
   .flex-contents-items h2 {
