@@ -105,27 +105,24 @@
     display: block;
   }
 
-  .flex-contents-items header {
+  .common-text {
     color: rgb(255, 251, 233);
     text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    text-align: center;
+  }
+
+  .flex-contents-items header {
     font-weight: bold;
     font-size: 3em;
-    text-align: center;
   }
 
   .flex-contents-items h1 {
-    color: rgb(255, 251, 233);
-    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
     font-weight: bold;
     font-size: 2em;
-    text-align: center;
   }
 
   .flex-contents-items h2 {
-    color: rgb(255, 251, 233);
-    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
     font-size: 1em;
-    text-align: center;
   }
 
   .flex-grid {
