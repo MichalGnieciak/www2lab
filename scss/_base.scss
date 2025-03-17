@@ -1,4 +1,9 @@
+@use 'variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Poppins;
+}
 
 .navigation {
     display: flex;
@@ -8,31 +13,31 @@
 
     list-style: none;
     margin: 0; 
-    background: rgb(206, 171, 147);
+    background: $primary;
+
+    a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: $info;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
   }
   
-  .navigation a {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: rgb(255, 251, 233);
-  }
-
   #logo {
     margin-right: auto;
     align-self: center;
   }
-
-  .navigation img {
-    width: 30px;
-    height: 30px;
-  }
   
   .navigation a:hover {
-    background: rgb(173, 139, 115);
+    background: $secondary;
   }
   
-  @media all and (max-width: 800px) {
+  @media all and (max-width: $max-width) {
     .navigation {
       justify-content: space-around;
     }
@@ -49,7 +54,7 @@
     }
     .navigation a { 
       text-align: center; 
-      padding: 10px;
+      padding: $base-padding;
       border-top: 1px solid rgba(255, 255, 255,0.3); 
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
     }
@@ -59,34 +64,34 @@
   }
 
   .flex-contents {
-    margin-top: 10px; 
+    margin-top: $base-padding; 
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 10px;
+    gap: $base-padding;
   }
 
   .navigation-side {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    color: rgb(255, 251, 233);
+    color: $info;
     margin: 0; 
-    background: rgb(206, 171, 147);
-  }
+    background: $primary;
 
-  .navigation-side a {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: rgb(255, 251, 233);
+    a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: $info;
+    }
   }
 
   .navigation-side a:hover {
-    background: rgb(173, 139, 115);
+    background: $secondary;
   }
 
-  @media all and (max-width: 800px) {
+  @media all and (max-width: $max-width) {
     .navigation-side {
       display: none;
     }
@@ -99,8 +104,16 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background: rgb(227, 202, 165);
-    gap: 5px;
+    background: $contents;
+    gap: $base-padding;
+
+    header {
+        font-weight: bold;   
+    }
+
+    h1 {
+        font-weight: bold;
+    }
   }
   
   .flex-flex {
@@ -108,8 +121,8 @@
   }
 
   .common-text {
-    color: rgb(255, 251, 233);
-    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    color: $info;
+    text-shadow: 2px 2px 5px  $secondary;
     text-align: center;
   }
 
@@ -118,19 +131,11 @@
   }
 
   .text-medium {
-    font-size: 2em;
+    font-size: $base-font-size;
   }
 
   .text-large {
     font-size: 3em;
-  }
-
-  .flex-contents-items header {
-    font-weight: bold;
-  }
-
-  .flex-contents-items h1 {
-    font-weight: bold;
   }
 
   .flex-grid {
@@ -153,40 +158,40 @@
   .color-example {
     width: 100px;
     height: 100px;
-    background:  rgb(173, 139, 115);
+    background:  $secondary;
   }
 
   table {
     border-collapse: collapse;
     margin: 20px 0;
     font-family: 'Arial', sans-serif;
-    background-color: rgb(255, 251, 233);
-    box-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    background-color: $info;
+    box-shadow: 2px 2px 5px  $secondary;
     border-radius: 8px;
   }
 
   th, td {
-    padding: 12px 20px;
+    padding: $base-padding 20px;
     text-align: center;
     font-size: 1rem;
-    color: rgb(173, 139, 115);
+    color: $secondary;
     border: 1px solid #ddd;
     transition: background-color 0.3s, color 0.3s;
   }
 
   th {
-    background-color: rgb(173, 139, 115);
+    background-color: $secondary;
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
   }
 
   th[scope="col"] {
-    background-color:  rgb(173, 139, 115);
+    background-color:  $secondary;
   }
 
   th[scope="row"] {
-    background-color: rgb(206, 171, 147);
+    background-color: $primary;
     color: white;
   }
 
@@ -194,19 +199,19 @@
     background-color: #ffffff;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: $max-width) {
     table {
       width: 100%;
       font-size: 0.9rem;
     }
 
     th, td {
-      padding: 8px 12px;
+      padding: 8px $base-padding;
     }
 
     tr:hover td, tr:hover th {
       background-color: #f1f1f1;
-      color:  rgb(173, 139, 115);
+      color:  $secondary;
     }
   
     tbody tr:nth-child(even) {
@@ -219,8 +224,8 @@
   }
 
   footer {
-    color: rgb(255, 251, 233);
-    text-shadow: 2px 2px 5px  rgb(173, 139, 115);
+    color: $info;
+    text-shadow: 2px 2px 5px  $secondary;
     font-size: 0.75em;
     font-weight: bold;
     text-align: center;  
@@ -240,12 +245,12 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: $base-padding;
   }
 
   button {
-    background-color: rgb(206, 171, 147);
-    color: white;
+    background-color: $primary;
+    color: $info;
     border: none;
     padding: 15px 32px;
     text-align: center;
@@ -258,7 +263,7 @@
   }
   
   button:hover {
-    background-color:  rgb(173, 139, 115);
+    background-color:  $secondary;
     transform: translateY(2px);
   }
 
@@ -269,9 +274,9 @@
 
   input {
     width: 100%; 
-    padding: 12px 20px; 
+    padding: $base-padding 20px; 
     font-size: 16px; 
-    color: rgb(173, 139, 115); 
+    color: $secondary; 
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -281,9 +286,9 @@
   }
   
   input:focus {
-    border-color:rgb(173, 139, 115);
+    border-color:$secondary;
     background-color: #fff;
-    box-shadow: 0 0 8px rgb(173, 139, 115);
+    box-shadow: 0 0 8px $secondary;
   }
   
   input::placeholder {
@@ -294,12 +299,12 @@
   input:disabled {
     background-color: #e0e0e0; 
     border-color: #ccc; 
-    color: rgb(173, 139, 115);
+    color: $secondary;
   }
 
   select {
     width: 100%;
-    padding: 12px 20px;
+    padding: $base-padding 20px;
     text-align: center;
     font-size: 16px; 
     color: #333; 
@@ -312,9 +317,9 @@
   }
   
   select:focus {
-    border-color:rgb(173, 139, 115);
+    border-color:$secondary;
     background-color: #fff;
-    box-shadow: 0 0 8px rgb(173, 139, 115);
+    box-shadow: 0 0 8px $secondary;
   }
 
   .progress-container {
@@ -322,13 +327,13 @@
     height: 30px; 
     background-color: #f3f3f3; 
     border-radius: 20px; 
-    box-shadow: 0 2px 5px rgb(173, 139, 115); 
+    box-shadow: 0 2px 5px $secondary; 
   }
   
   /* The actual progress bar */
   .progress-bar {
     height: 100%;
-    background-color: rgb(173, 139, 115);
+    background-color: $secondary;
     border-radius: 20px;
     transition: width 0.3s ease;
   }
