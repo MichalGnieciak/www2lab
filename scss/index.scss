@@ -1,2 +1,10 @@
-@use 'variables' as *;
+// base & layout
 @use 'base';
+
+// colors
+
+
+// components (button, navbar, table) 
+@use 'components/table';
+
+// utilities (margin, padding)

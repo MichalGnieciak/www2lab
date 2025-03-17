@@ -1,9 +1,16 @@
+@use 'sass:math';
+
 $primary: rgb(206, 171, 147); 
 $secondary:  rgb(173, 139, 115);
 $info: rgb(255, 251, 233);
 $contents: rgb(227, 202, 165);
 
 $base-font-size: 2em;
+$small-font-size: math.div($base-font-size, 2);
+$large-font-size: $base-font-size * 1.5;
+
 $base-padding: 10px;
 
 $max-width: 800px;
+
+$base-border-radius: 8px;

@@ -18,7 +18,7 @@ body {
     a {
         text-decoration: none;
         display: block;
-        padding: 1em;
+        padding: $small-font-size;
         color: $info;
     }
 
@@ -82,7 +82,7 @@ body {
     a {
         text-decoration: none;
         display: block;
-        padding: 1em;
+        padding: $small-font-size;
         color: $info;
     }
   }
@@ -127,7 +127,7 @@ body {
   }
 
   .text-small {
-    font-size: 1em;
+    font-size: $small-font-size;
   }
 
   .text-medium {
@@ -135,7 +135,7 @@ body {
   }
 
   .text-large {
-    font-size: 3em;
+    font-size: $large-font-size;
   }
 
   .flex-grid {
@@ -159,68 +159,6 @@ body {
     width: 100px;
     height: 100px;
     background:  $secondary;
-  }
-
-  table {
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-family: 'Arial', sans-serif;
-    background-color: $info;
-    box-shadow: 2px 2px 5px  $secondary;
-    border-radius: 8px;
-  }
-
-  th, td {
-    padding: $base-padding 20px;
-    text-align: center;
-    font-size: 1rem;
-    color: $secondary;
-    border: 1px solid #ddd;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  th {
-    background-color: $secondary;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-
-  th[scope="col"] {
-    background-color:  $secondary;
-  }
-
-  th[scope="row"] {
-    background-color: $primary;
-    color: white;
-  }
-
-  td {
-    background-color: #ffffff;
-  }
-
-  @media (max-width: $max-width) {
-    table {
-      width: 100%;
-      font-size: 0.9rem;
-    }
-
-    th, td {
-      padding: 8px $base-padding;
-    }
-
-    tr:hover td, tr:hover th {
-      background-color: #f1f1f1;
-      color:  $secondary;
-    }
-  
-    tbody tr:nth-child(even) {
-      background-color: #f8f8f8;
-    }
-  
-    tbody tr:nth-child(odd) {
-      background-color: #ffffff;
-    }
   }
 
   footer {
@@ -248,27 +186,8 @@ body {
     gap: $base-padding;
   }
 
-  button {
-    background-color: $primary;
-    color: $info;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
-  
-  button:hover {
-    background-color:  $secondary;
-    transform: translateY(2px);
-  }
-
   label {
-    font-size: 1.5em;
+    font-size: $small-font-size;
     font-weight: bold;
   }
 
@@ -320,6 +239,25 @@ body {
     border-color:$secondary;
     background-color: #fff;
     box-shadow: 0 0 8px $secondary;
+  }
+
+  button {
+    background-color: $primary;
+    color: $info;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $small-font-size;
+    cursor: pointer;
+    border-radius: $base-border-radius;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color:  $secondary;
+    transform: translateY(2px);
   }
 
   .progress-container {

@@ -2,7 +2,7 @@ const {src, dest, watch, series} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
 function buildStyles() {
-    src('scss/index.scss')
+    return src('scss/index.scss')
         .pipe(sass())
         .pipe(dest('css/'));
 }

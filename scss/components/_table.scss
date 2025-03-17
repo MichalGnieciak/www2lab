@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Arial', sans-serif;
+  background-color: $info;
+  box-shadow: 2px 2px 5px  $secondary;
+  border-radius: $base-border-radius;
+}
+
+th, td {
+  padding: $base-padding 20px;
+  text-align: center;
+  font-size: $small-font-size;
+  color: $secondary;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+th {
+  background-color: $secondary;
+  color: $info;
+  font-size: $small-font-size;
+  font-weight: 600;
+}
+
+th[scope="col"] {
+  background-color:  $secondary;
+}
+
+th[scope="row"] {
+  background-color: $primary;
+  color: $info;
+}
+
+td {
+  background-color: $info;
+}
+
+@media (max-width: $max-width) {
+  table {
+    width: 100%;
+    font-size: $small-font-size;
+  }
+
+  th, td {
+    padding: 8px $base-padding;
+  }
+
+  tr:hover td, tr:hover th {
+    background-color: #f1f1f1;
+    color:  $secondary;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+  
+    tr:nth-child(odd) {
+      background-color: $info;
+    }
+  }
+}
