@@ -1,0 +1,21 @@
+@use 'variables' as *;
+
+select {
+    width: 100%;
+    padding: $base-padding 20px;
+    text-align: center;
+    font-size: 16px; 
+    color: #333; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: $base-border-radius; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-sizing: border-box; 
+  }
+  
+  select:focus {
+    border-color:$secondary;
+    background-color: #fff;
+    box-shadow: 0 0 8px $secondary;
+  }

@@ -1,0 +1,39 @@
+@use 'variables' as *;
+@use 'colors' as *;
+@use "sass:color";
+
+// Mixin with parameter and default value
+@mixin btn($bg-color: #e2e2e2) {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $small-font-size;
+    cursor: pointer;
+    border-radius: $base-border-radius;
+    background-color: $bg-color;
+}
+
+@each $key, $val in $colors {
+    .btn-#{$key} {
+        @include btn($val);
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: color.mix(white, $val, 20%);
+            transform: translateY(2px);
+        }
+    }
+    .btn-outlined-#{$key} {
+        @include btn(#fff);
+        border: 5px solid $val;
+        &:hover {
+            background-color: $val;
+            transform: translateY(2px);
+        }
+    }
+}
+
+.btn {
+    @include btn;
+}

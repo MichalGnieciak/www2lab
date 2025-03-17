@@ -1,9 +1,26 @@
 @use 'sass:math';
+@use 'sass:map';
 
 $primary: rgb(206, 171, 147); 
 $secondary:  rgb(173, 139, 115);
 $info: rgb(255, 251, 233);
 $contents: rgb(227, 202, 165);
+
+// color palette
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "info": $info,
+    "contents": $contents,
+    "links": rgb(14, 28, 54),
+    "additional": rgb(99, 105, 209)
+);
+
+// Map functions
+//@debug map.get($colors, "links");
+//@debug map.has-key($colors, "secondary");
+//@debug map.remove($colors, "primary");
+//@debug map.merge($colors, ("pink" : #ffc0cb));
 
 $base-font-size: 2em;
 $small-font-size: math.div($base-font-size, 2);

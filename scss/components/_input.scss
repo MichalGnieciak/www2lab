@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+input {
+    width: 100%; 
+    padding: $base-padding 20px; 
+    font-size: 16px; 
+    color: $secondary; 
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: $base-border-radius;
+    outline: none; 
+    box-sizing: border-box;
+    transition: all 0.3s ease; 
+
+    &:focus {
+        border-color:$secondary;
+        background-color: #fff;
+        box-shadow: 0 0 8px $secondary;
+    }
+
+    &::placeholder {
+        color: #aaa;
+        font-style: italic; 
+    }
+
+    &:disabled {
+        background-color: #e0e0e0; 
+        border-color: #ccc; 
+        color: $secondary;
+    }
+  }
