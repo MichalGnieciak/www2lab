@@ -133,6 +133,7 @@ body {
     margin-top: $base-padding; 
     display: flex;
     flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     gap: $base-padding;
   }
@@ -141,6 +142,7 @@ body {
     margin-top: $base-padding; 
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     gap: $base-padding;
   }

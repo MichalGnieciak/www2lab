@@ -1,113 +1,142 @@
-<!--Done--><!DOCTYPE html>
-<!--Done--><html lang="en">
-<!--Done-->    <head>
-<!--Done-->       <meta charset="UTF-8">
-<!--Done-->        <meta name="viewport" content="width=device-width">
-<!--Done-->        <title>Colors</title>
-<!--Done-->        <link rel="stylesheet" href="css/styles.css">
-<!--Done-->    </head>
-<!--Done-->    <body>
-        <!--1.Site's structure-->
-        <!--Header, article, footer, h1, h2-->
-<!--Done-->        <header>
-            <a class="logo" href="assets/color-wheel.png">What colors are the most favored</a>
-<!--Done-->        </header>
-<!--Done-->        <article class="flex-article">
-<!--Done-->           <header>What colors are the most favored</header>
-<!--Done-->            <h2>Here's what a color may look like:</h2>
-<!--Done-->            <!--5. Image-->
-<!--Done-->            <!-- img -->
-<!--Done-->            <img class="image-scaled" decoding="async" src="assets/color-example.png" alt="#87cefa hex color wallpaper" loading="lazy">
-<!--Done-->            <!--7. Description-->
-<!--Done-->            <!--details, summary-->
-<!--Done-->            <details class="flex-details">
-<!--Done-->                <summary class="flex-details-elem">What's that color:</summary>
-<!--Done-->                <p class="flex-details-elem">Blue.<p>
-<!--Done-->                <!--8. Progress bar-->
-<!--Done-->                <!--progress-->
-<!--Done-->                <progress class="flex-details-elem" id="progress-bar" aria-label="Content loading…"></progress>
-<!--Done-->            </details>
-<!--Done-->            <h2>About:</h2>
-<!--Done-->            <p>
-<!--Done-->                <!--4. Distinctions-->
-<!--Done-->                <!--em, strong-->
-<!--Done-->                This is a template site to showcase the <em>HTML</em> and <strong>colors</strong>
-<!--Done-->                as discussed : <a href="https://michalgnieciak.github.io/">here</a>.
-<!--Done-->            </p>
-<!--Done-->            <h1>All listed colors:</h1>
-<!--Done-->            <!--3. List-->
-<!--Done-->            <!--ol with roman numerals-->
-<!--Done-->            <ol type="I">
-<!--Done-->            <li>Blue</li>
-<!--Done-->            <li>Red</li>
-<!--Done-->            <li>Green</li>
-<!--Done-->            <li>Purple</li>
-<!--Done-->            <li>Black</li>
-<!--Done-->            </ol>
-<!--Done-->             <!--2. Table-->
-<!--Done-->             <!--table, thead, tr, th, caption-->
-<!--Done-->            <table>
-<!--Done-->                <caption>Color stats:</caption>
-<!--Done-->                <thead>
-<!--Done-->                  <tr>
-<!--Done-->                    <th scope="col" rowspan="2">Name</th>
-<!--Done-->                    <th scope="col" colspan="2">Cool</th>
-<!--Done-->                    <th scope="col" rowspan="2">Wavelength</th>
-<!--Done-->                  </tr>
-<!--Done-->                  <tr>
-<!--Done-->                    <th scope="col">Has been</th>
-<!--Done-->                    <th scope="col">Still is</th>
-<!--Done-->                  </tr>
-<!--Done-->                </thead>
-<!--Done-->                <tbody>
-<!--Done-->                  <tr>
-<!--Done-->                    <th scope="row">Blue</th>
-<!--Done-->                    <td>Y</td>
-<!--Done-->                    <td>N</td>
-<!--Done-->                    <td>432</td>
-<!--Done-->                  </tr>
-<!--Done-->                  <tr>
-<!--Done-->                    <th scope="row">Red</th>
-<!--Done-->                    <td>N</td>
-<!--Done-->                    <td>N</td>
-<!--Done-->                    <td>332</td>
-<!--Done-->                  </tr>
-<!--Done-->                </tbody>
-<!--Done-->            </table>
-<!--Done-->            <footer>
-<!--Done-->                <p>© 2025 Michał Gnieciak <time>06.03.2025</time></p>
-<!--Done-->            </footer>
-<!--Done-->        </article>
-<!--Done-->        <!--6. Form-->
-<!--Done-->        <!--form, input, select, button-->
-<!--Done-->        <form method="get">
-<!--Done-->            <label>
-<!--Done-->              Type in your favourite color or select from list below:
-<!--Done-->              <input type="text" name="submitted-color">
-<!--Done-->            </label>
-<!--Done-->            <select name="colors" id="color-select">
-<!--Done-->                <option value="">List of colors</option>
-<!--Done-->                <option value="black">Black</option>
-<!--Done-->                <option value="blue">Blue</option>
-<!--Done-->                <option value="green">Green</option>
-<!--Done-->                <option value="purple">Purple</option>
-<!--Done-->                <option value="red">Red</option>
-<!--Done-->            </select>
-<!--Done-->            <button type="submit">Save</button>
-<!--Done-->        </form>
-<!--Done-->        <div id="container">
-<!--Done-->            <div id="image_container">
-<!--Done-->                <!--http://www.image-map.net/-->
-<!--Done-->                <img src="assets/ImageMap/primary.jpg" usemap="#image-map" alt="ImageMap">
-<!--Done-->                <!--9. Map-->
-<!--Done-->                <!--map, area, at least 3 scopes-->
-<!--Done-->                <map name="image-map">
-<!--Done-->                    <!-- target="_blank": Opens the link in new tab -->
-<!--Done-->                    <area alt="Yellow" title="Yellow" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_yellow" coords="587,1119,342,1060,159,908,56,561,128,323,584,589" shape="poly">
-<!--Done-->                    <area alt="Blue" title="Blue" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_blue" coords="587,588,1051,323,1118,572,1044,865,837,1062,591,1122" shape="poly">
-<!--Done-->                    <area alt="Red" title="Red" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_red" coords="586,582,128,318,310,135,439,79,638,59,848,118,957,207,1048,321" shape="poly">
-<!--Done-->                </map>
-<!--Done-->            </div>
-<!--Done-->        </div>
-<!--Done-->    </body>
-<!--Done--></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Colors</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <ul class="navigation">
+            <li id="logo"><a target="_blank" href="https://michalgnieciak.github.io/"><img class="image-scaled" src="assets/color-wheel.png"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#survey">Survey</a></li>
+            <li><a target="_blank" href="https://michalgnieciak.github.io/about/">About</a></li>
+            <li><a target="_blank" href="https://github.com/MichalGnieciak">Contact</a></li>
+        </ul>
+        <div class="flex-contents">
+            <ol class="navigation-side" type="I">
+                <caption>Colors list:</caption>
+                <li><a href="https://michalgnieciak.github.io/posts/Learn-about-blue/">Blue</a></li>
+                <li><a href="https://michalgnieciak.github.io/posts/Learn-about-red/">Red</a></li>
+                <li><a href="https://michalgnieciak.github.io/posts/Learn-about-green/">Green</a></li>
+                <li><a href="https://michalgnieciak.github.io/posts/Learn-about-purple/">Purple</a></li>
+                <li><a href="https://michalgnieciak.github.io/posts/Learn-about-black/">Black</a></li>
+            </ol>
+            <article class="flex-contents-items">
+                <header class="flex-flex common-text text-large">What colors are the most favored?</header>
+                <h1 class="flex-flex common-text text-medium">Get to know that by reading the below article.</h1>
+                <h2 class="flex-flex common-text text-small"><em>(Be aware that <strong>most</strong> of the data is <strong>made up</strong>)</em></h2>
+                <div  class="flex-flex flex-grid">
+                   <div class="flex-grid-picture">
+                        <p class="common-text text-small">Here's what a color may look like:</p>
+                        <div class="color-example"></div>
+                        <details class="flex-details text-small">
+                            <summary class="flex-details-elem common-text text-small">What's that color:</summary>
+                            <p class="flex-details-elem common-text">Brown.<p>
+                            <p class="common-text">And this is how many people answered that correctly:</p>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>    
+                        </details>
+                   </div>
+                   <table>
+                    <caption class="common-text text-small">Color stats:</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col" rowspan="2">Name</th>
+                        <th scope="col" colspan="2">Cool</th>
+                        <th scope="col" rowspan="2">Wavelength</th>
+                      </tr>
+                      <tr>
+                        <th scope="col">Has been</th>
+                        <th scope="col">Still is</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Blue</th>
+                        <td>Y</td>
+                        <td>N</td>
+                        <td>432</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Red</th>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>332</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="image_container">
+                    <p class="common-text">Here's what a color map may look like:</p>
+                    <img src="assets/ImageMap/primary.png" usemap="#image-map" alt="ImageMap" style="width: 100px; height: 100px;">
+                    <map name="image-map">
+                        <area alt="Yellow" title="Yellow" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_yellow" coords="49,93,28,88,13,76,5,47,11,27,48,49" shape="poly">
+                        <area alt="Blue" title="Blue" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_blue" coords="49,49,87,27,93,48,87,72,70,80,49,93" shape="poly">
+                        <area alt="Red" title="Red" target="_blank" href="https://en.wikipedia.org/wiki/Shades_of_red" coords="49,48,11,27,26,11,36,7,53,5,70,8,79,12,87,27" shape="poly">
+                    </map>
+                </div>                
+                </div>
+                <form id="survey" method="get" class="flex-form">
+                    <label class="common-text">
+                      Type in your favourite color or select from the list below:
+                    </label>
+                    <input type="text" name="submitted-color" placeholder="Enter color:">
+                    <select name="colors" id="color-select">
+                        <option value="">List of colors</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="purple">Purple</option>
+                        <option value="red">Red</option>
+                    </select>
+                    <button class="btn-primary text-info" type="submit">Save</button>
+                </form>
+                <footer>
+                    <p>© 2025 Michał Gnieciak <time>06.03.2025</time></p>
+                </footer>
+            </article>
+        </div>
+       <div class="flex-utilities bg-contents">
+            <div class="flex-utilities-elem">
+                <span class="common-text text-medium">Utility classes:</span>
+            </div>
+            <div class="flex-utilities-elem">
+                <span class="text-primary">primary text</span> |
+                <span class="text-secondary">secondary text</span> |
+                <span class="text-links">links text</span> |
+                <span class="text-additional">additional text</span> |
+            </div>
+            <div class="flex-utilities-elem">
+                <span class="bg-primary">primary bg</span> |
+                <span class="bg-secondary">secondary bg</span> |
+                <span class="bg-links">links bg</span> |
+                <span class="bg-additional">additional bg</span> |
+            </div> 
+            <div class="flex-utilities-elem">
+                <span class="bg-primary-dark-5 text-white">primary dark 5</span> |
+                <span class="bg-primary-dark-4 text-white">primary dark 4</span> |
+                <span class="bg-primary-dark-3 text-white">primary dark 3</span> |
+                <span class="bg-primary-dark-2 text-white">primary dark 2</span> |
+                <span class="bg-primary text-white">primary</span> |
+                <span class="bg-primary-light-2 text-white">primary light 2</span> |
+                <span class="bg-primary-light-3 text-white">primary light 3</span> |
+                <span class="bg-primary-light-4 text-white">primary light 4</span> |
+                <span class="bg-primary-light-5 text-white">primary light 5</span> |
+            </div>
+            <div class="flex-utilities-elem">
+                <a href="#" class="text-primary-dark-3 text-hover-primary-dark-5">hover me</a>
+            </div>
+            <div class="flex-utilities-elem">
+                <a href="#" class="btn text-info">default btn</a>
+                <a href="#" class="btn-primary text-info">click me</a>
+                <a href="#" class="btn-secondary text-info">click me</a>
+                <a href="#" class="btn-links text-info">click me</a>
+                <a href="#" class="btn-outlined-additional text-additional text-hover-info">click me</a>
+                <a href="#" class="btn-outlined-primary text-primary text-hover-info">click me</a>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -37,8 +37,8 @@
     }
 
     .navigation-side {
-        display: none;
-      }
+        display: none !important;
+    }
   }
   
   @media all and (max-width: 600px) {
