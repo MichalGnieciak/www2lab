@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use 'variables' as *; // To not type variables.$primary etc.
 @use 'sass:color';
 
 @each $key, $val in $colors {
